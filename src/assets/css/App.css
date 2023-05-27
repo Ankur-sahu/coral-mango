@@ -119,4 +119,65 @@ form>button{
 .error-box{
   border: 1px solid red;
 }
+.dashboard-page{
+  width: 100%;
+  padding: 100px;
+  border: 1px solid red;
+}
+.dashboard{
+  width: 100%;
+  height: auto;
+}
+.filter-tools{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 0 120px;
+  justify-content:space-between;
+}
+.filter-tools>div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00a3e0;
+}
+.filter-tools>div>button{
+  width: 100px;
+  height: 30px;
+  font-size: larger;
+  background-color: #039bd3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.view-data{
+  width: 100%;
+}
+.switch{
+  width: 80%;
+}
+table{
+  width: 80%;
+  background-color: #fff;
+}
+thead th{
 
+background-color: #00008b;
+
+color: #ffffff;
+
+}
+
+tbody>tr>:nth-child(1){
+
+background-color: #f2f2f2;
+
+}
+tbody td {
+  text-align: center;
+
+border: 1px solid #dddddd;
+
+
+}

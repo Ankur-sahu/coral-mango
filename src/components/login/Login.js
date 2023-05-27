@@ -72,6 +72,7 @@ const Login = () => {
                         onChange={(e) => handleInput(e)}
                         name="email"
                         errMsg={validateFrom.email}
+                        required={true}
                     />
                     <Input
                         type="password"
@@ -79,6 +80,7 @@ const Login = () => {
                         onChange={(e) => handleInput(e)}
                         name="password"
                         errMsg={validateFrom.password}
+                        required={true}
                     />
                     <Button type="submit">Login</Button>
                 </form>

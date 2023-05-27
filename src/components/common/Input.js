@@ -1,11 +1,11 @@
 import React from "react";
 
-const Input = ({ type, value, onChange, name, label, errMsg }) => {
+const Input = ({ type, value, onChange, name, label, errMsg, required }) => {
     return (
         <>
             <div className="input-container">
                 <div>
-                    <label htmlFor={name}>{label} <sup>*</sup></label>
+                    <label htmlFor={name}>{label} {required && <sup>*</sup>}</label>
                 </div>
                 <input
                     className={errMsg ? 'error-box' : 'input-field'}
