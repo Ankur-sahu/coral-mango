@@ -14,12 +14,14 @@ const Dashboard = () => {
     const [errMsg, setErrMsg] = useState("")
     const [tableView, setTableView] = useState(true)
     const [user, setUser] = useState([])
+    const [filtered,setFiltered] = useState(false)
     // Fetch user data from localStorage or state
     // Example: const userData = JSON.parse(localStorage.getItem('login'));
     const navigate = useNavigate()
     const fetchData = async () => {
         const response = await axios("https://coralmango.com/api/react-test")
         setUser(response.data)
+        setFiltered(false)
     }
     const searchData = ()=>{
         setErrMsg("")
@@ -29,6 +31,7 @@ const Dashboard = () => {
         }
         setUser(searchIt(user,searchInput))
         setSearchInput("")
+        setFiltered(!filtered)
     }
 
     useEffect(() => {
@@ -41,6 +44,13 @@ const Dashboard = () => {
         <>
             <main className="dashboard-page">
                 <div className="display-col dashboard">
+                <div className="switch">
+                        <div>Change View : <Button onClick={() => setTableView(!tableView)} >{tableView ? "Card View" : "Table View"}</Button></div>
+                        {filtered && <><div className="banner">
+                                    You are viewing filtered results! 
+                                </div></>}
+                                <Button onClick={()=>fetchData()}>Clear filter</Button>
+                    </div>
                     <div className="filter-tools">
                         <div className="display-row filter-btns">
                             <div>Short By :</div>
@@ -59,9 +69,7 @@ const Dashboard = () => {
                             <Button onClick={()=>searchData()}>Search</Button>
                         </div>
                     </div>
-                    <div className="switch">
-                        <Button onClick={() => setTableView(!tableView)} >{tableView ? "Card View" : "Table View"}</Button>
-                    </div>
+                    
                     <div className="display-row view-data">
                         {tableView ? <TableView data={user} /> : <CardView data={user} />}
                     </div>

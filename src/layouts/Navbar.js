@@ -23,6 +23,12 @@ const Navbar = () => {
       <nav>
         <div className="logo">LOGO</div>
         <div className="menu-items">
+          <ul className="display-row">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect Us</li>
+
+          </ul>
           {userData && (
             <div onClick={()=>setLogoutBtn(!logoutBtn)}>
               {name[0]} <img src={donwArrow} alt="Down Arrow" />
