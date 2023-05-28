@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# React Assignment CoralMango Solutions Pvt Ltd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a sample React application that fetches JSON data from an API and displays it in a table. It also includes a login page for authentication. The application allows sorting the table by "name" and "age" properties and provides a search functionality to filter the results based on the name. Additionally, it includes a navigation bar, a card list view, and is responsive.
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+### Section I: React Basics
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Fetches JSON data from the API: `https://coralmango.com/api/react-test`
+2. Displays the fetched data in a table.
+3. Allows sorting the table by "name" and "age" properties.
+4. Provides a search box to filter the table results based on name.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Section II: HTML & CSS
 
-### `npm test`
+1. Adds a navigation bar using an unordered list and CSS styles.
+2. Implements a card list view for the same results.
+3. Includes a toggle to switch between table and card list view.
+4. Makes the page responsive using flex or grid layouts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Section III: ES6 Basics
 
-### `npm run build`
+1. Generates `result1` array from `a` array: `[1, 3, 5, 2, 4]` => `[1, 5, 4]`
+2. Generates `result2` array from `a` array: `[1, 3, 5, 2, 4]` => `[1, 9, 25, 4, 16]`
+3. Generates `result3` array from `a` array: `[1, 3, 5, 2, 4]` => `[1, 25, 16]`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Login Credentials
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Username: demo@coralmango.com
+- Password: demo123
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run the Project
 
-### `npm run eject`
+To run the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install the required dependencies.
+4. Run `npm start` to start the development server.
+5. Open `localhost:3000` in your web browser to view the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- [Additional dependencies...]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+[Add instructions on how to use the application and any relevant details.]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Specify the license for your project, if applicable.]
 
-### Code Splitting
+[Include any other relevant information or sections you'd like to add.]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
