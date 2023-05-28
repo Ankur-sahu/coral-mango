@@ -1,7 +1,6 @@
 import React from "react";
 import avatar from "../../assets/images/avatar.png"
 const CardView =({data})=>{
-    // const headings = Object.keys(data[0])
     return(
         <>
             <div className="card-container">

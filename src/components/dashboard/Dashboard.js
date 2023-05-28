@@ -15,19 +15,16 @@ const Dashboard = () => {
     const [searchInput, setSearchInput] = useState("")
     const [allData, setAllData] = useState([])
     const [user, setUser] = useState([])
-    // const [filtered, setFiltered] = useState(false)
     const navigate = useNavigate()
     const fetchData = async () => {
         const response = await axios("https://coralmango.com/api/react-test")
         setAllData(response.data)
         setUser(response.data)
-        // setFiltered(false)
     }
+    
     const searchData = (e) => {
         setSearchInput(e.target.value)
         setUser(searchIt(allData, e.target.value))
-        // setSearchInput("")
-        // setFiltered(!filtered)
     }
 
     useEffect(() => {
