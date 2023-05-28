@@ -32,12 +32,15 @@ const Navbar = () => {
 
           </ul></div>
         <div className="menu-items">
-          <div onClick={() => setTableView(!tableView)} >{tableView ? "Card View" : "Table View"}</div>
+
           {userData && (
+            <>
+            <div onClick={() => setTableView(!tableView)} >{tableView ? "Card View" : "Table View"}</div>
             <div onClick={() => setLogoutBtn(!logoutBtn)}>
               {name[0]} <img src={donwArrow} alt="Down Arrow" />
               {logoutBtn && <div onClick={logout}>Logout</div>}
             </div>
+            </>
           )}
         </div>
       </nav>
