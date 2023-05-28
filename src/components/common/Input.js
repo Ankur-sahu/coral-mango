@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ type, value, onChange, name, label, errMsg, required }) => {
+const Input = ({ type, value, onChange, name, label, errMsg, required, placeholder }) => {
     return (
         <>
             <div className="input-container">
@@ -14,6 +14,7 @@ const Input = ({ type, value, onChange, name, label, errMsg, required }) => {
                     id={name}
                     value={value}
                     onChange={onChange}
+                    placeholder={placeholder}
                 />
                 <div>{errMsg && <div className="error-msg">{errMsg}</div>}</div>
             </div>
