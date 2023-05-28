@@ -1,0 +1,12 @@
+Array.prototype.myFilter = function(callbackFn){
+    const arr = []
+    for(let i =0;i<this.length;i+=2){
+        let result = callbackFn(this[i])
+        arr.push(result)
+    }
+    return arr
+}
+
+a = [1, 3, 5, 2, 4]
+let result3  = a.myFilter((num)=> num*num)
+console.log(test)

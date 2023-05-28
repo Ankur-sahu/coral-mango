@@ -1,0 +1,3 @@
+a = [1, 3, 5, 2, 4]
+let result2  = a.map((num)=> num*num)
+console.log(result2)
